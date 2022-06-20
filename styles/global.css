@@ -1,7 +1,13 @@
 :root {
   --color-text-default: #141414;
+  --color-bg-text-menu: #f5f5f5;
 }
 
 body {
   color: var(--color-text-default);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
