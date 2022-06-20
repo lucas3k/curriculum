@@ -1,3 +1,8 @@
-* {
-  font-family: "Fira Sans", sans-serif;
-}
+/* Reset styles default navigator */
+@import "./reset.css";
+
+/* Global styles all pages */
+@import "./global.css";
+
+/* Header style */
+@import "./header.css";
