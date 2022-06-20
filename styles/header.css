@@ -11,6 +11,7 @@
 
 .header-menu {
   gap: 10px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -20,4 +21,21 @@
   padding: 10px 20px;
   color: var(--color-text-default);
   display: block;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .header-menu a {
+    background-color: var(--color-bg-text-menu);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
 }
