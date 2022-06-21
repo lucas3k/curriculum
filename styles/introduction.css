@@ -9,4 +9,53 @@
 .introduction h1 {
   font-size: 4.5rem;
   line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introduction h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../images/detalhe.svg") no-repeat;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.introduction p {
+  font-size: 1.5rem;
+  color: var(--color-text-light);
+}
+
+@media (max-width: 1000px) {
+  .introduction h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introduction {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .introduction h1 {
+    font-size: 2rem;
+  }
+  .introduction h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .introduction {
+    grid-template-columns: 1fr;
+  }
+  .introduction img {
+    display: none;
+  }
 }

@@ -1,6 +1,11 @@
 :root {
   --color-text-default: #141414;
   --color-bg-text-menu: #f5f5f5;
+  --color-text-light: #525252;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
