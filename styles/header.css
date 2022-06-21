@@ -3,6 +3,11 @@
   display: flex;
 }
 
+.header-logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
 .header {
   padding: 40px 20px;
   justify-content: space-between;
