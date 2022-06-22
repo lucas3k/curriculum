@@ -2,6 +2,10 @@
   --color-text-default: #141414;
   --color-bg-text-menu: #f5f5f5;
   --color-text-light: #525252;
+  --color-subtitle-experience: #e0e0e0;
+  --color-subtitle-experience-text: #525252;
+  --color-bg-experience: var(--color-bg-text-menu);
+  --color-write: #fff;
 }
 
 html {
@@ -18,4 +22,9 @@ body {
 }
 
 .subtitle {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 4ch;
+  word-break: break-all;
 }
