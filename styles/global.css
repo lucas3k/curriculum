@@ -19,6 +19,14 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+.a {
+  color: #7159c1;
+}
+.a:hover {
+  text-decoration: underline;
 }
 
 .subtitle {
