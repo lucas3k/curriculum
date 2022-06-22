@@ -1,0 +1,117 @@
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 20px;
+  gap: 100px;
+}
+
+.experience .subtitle {
+  color: var(--color-subtitle-experience);
+}
+
+.experience-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: var(--color-subtitle-experience-text);
+}
+
+.experience-text strong {
+  color: var(--color-text-default);
+}
+
+.company {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  padding: 20px;
+  background-color: var(--color-bg-experience);
+  margin-bottom: 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  position: relative;
+}
+
+.company::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.company-year {
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  color: var(--color-subtitle-experience-text);
+  font-size: 0.875rem;
+  width: 80px;
+  text-align: right;
+}
+
+.company-title {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.company-text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--color-subtitle-experience-text);
+}
+
+.company-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+}
+
+.company-skills li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-color: var(--color-write);
+  padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experience .subtitle {
+    color: var(--color-text-default);
+  }
+  .company-title {
+    font-size: 1.25rem;
+  }
+  .company-year {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .company-year::before {
+    content: "Ano: ";
+  }
+}
+
+@media (max-width: 400px) {
+  .company {
+    grid-template-columns: 1fr;
+  }
+}
