@@ -1,6 +1,7 @@
 .experience {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding: 20px;
   gap: 100px;
 }
 
@@ -85,4 +86,32 @@
   -o-border-radius: 4px;
   background-color: var(--color-write);
   padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experience .subtitle {
+    color: var(--color-text-default);
+  }
+  .company-title {
+    font-size: 1.25rem;
+  }
+  .company-year {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .company-year::before {
+    content: "Ano: ";
+  }
+}
+
+@media (max-width: 400px) {
+  .company {
+    grid-template-columns: 1fr;
+  }
 }

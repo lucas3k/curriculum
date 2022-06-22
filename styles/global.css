@@ -28,3 +28,11 @@ body {
   max-width: 4ch;
   word-break: break-all;
 }
+
+@media (max-width: 800px) {
+  .subtitle {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}
