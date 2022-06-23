@@ -4,12 +4,26 @@
 }
 
 .formation-container {
+  padding: 120px 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+  position: relative;
+}
+
+.formation-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../images/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
 }
 
 .formation .subtitle {
+  max-width: 5ch;
   color: var(--color-dark);
 }
 
@@ -104,4 +118,37 @@
 
 .languages h3::before {
   background: url("../images/idiomas.svg") no-repeat center center;
+}
+
+.formation-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formation-extra span {
+  color: var(--color-text-courses);
+}
+
+.courses li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formation-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .formation .subtitle {
+    color: var(--color-write);
+  }
+  .formation-text {
+    font-size: 1.125rem;
+  }
+  .formation-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
 }
