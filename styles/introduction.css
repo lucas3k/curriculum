@@ -18,7 +18,7 @@
   display: block;
   width: 130px;
   height: 100px;
-  background: url("../images/detalhe.svg") no-repeat;
+  background: url("../images/detalhe.svg") no-repeat center;
   position: absolute;
   top: -15px;
   left: -40px;

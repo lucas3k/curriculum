@@ -1,0 +1,154 @@
+.formation {
+  background-color: var(--color-text-default);
+  color: var(--color-write);
+}
+
+.formation-container {
+  padding: 120px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.formation-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../images/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.formation .subtitle {
+  max-width: 5ch;
+  color: var(--color-dark);
+}
+
+.formation-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: var(--color-contra);
+}
+
+.formation-text strong {
+  color: var(--color-write);
+}
+
+.college-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.college {
+  background-color: var(--color-dark);
+  flex: 1;
+  padding: 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.college-type {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--color-contra);
+  margin-bottom: 10px;
+}
+
+.college-course {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+  flex: 1;
+}
+
+.college-course::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -24px;
+}
+
+.college-institution {
+  font-size: 1.125rem;
+  color: var(--color-contra);
+}
+
+.courses {
+  margin-bottom: 60px;
+}
+
+.formation-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--color-text-courses);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formation-extra h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.courses h3::before {
+  background: url("../images/cursos.svg") no-repeat center center;
+}
+
+.languages h3::before {
+  background: url("../images/idiomas.svg") no-repeat center center;
+}
+
+.formation-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formation-extra span {
+  color: var(--color-text-courses);
+}
+
+.courses li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formation-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .formation .subtitle {
+    color: var(--color-write);
+  }
+  .formation-text {
+    font-size: 1.125rem;
+  }
+  .formation-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}

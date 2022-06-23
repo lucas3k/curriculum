@@ -6,6 +6,9 @@
   --color-subtitle-experience-text: #525252;
   --color-bg-experience: var(--color-bg-text-menu);
   --color-write: #fff;
+  --color-contra: #a3a3a3;
+  --color-dark: #000;
+  --color-text-courses: #8f8f8f;
 }
 
 html {
@@ -19,6 +22,15 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+.a {
+  color: #7159c1;
+}
+
+.a:hover {
+  text-decoration: underline;
 }
 
 .subtitle {
@@ -33,6 +45,6 @@ body {
   .subtitle {
     font-size: 3rem;
     text-transform: capitalize;
-    max-width: initial;
+    max-width: initial !important;
   }
 }
