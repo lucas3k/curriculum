@@ -1,0 +1,107 @@
+.formation {
+  background-color: var(--color-text-default);
+  color: var(--color-write);
+}
+
+.formation-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.formation .subtitle {
+  color: var(--color-dark);
+}
+
+.formation-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: var(--color-contra);
+}
+
+.formation-text strong {
+  color: var(--color-write);
+}
+
+.college-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.college {
+  background-color: var(--color-dark);
+  flex: 1;
+  padding: 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.college-type {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--color-contra);
+  margin-bottom: 10px;
+}
+
+.college-course {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+  flex: 1;
+}
+
+.college-course::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -24px;
+}
+
+.college-institution {
+  font-size: 1.125rem;
+  color: var(--color-contra);
+}
+
+.courses {
+  margin-bottom: 60px;
+}
+
+.formation-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--color-text-courses);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formation-extra h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.courses h3::before {
+  background: url("../images/cursos.svg") no-repeat center center;
+}
+
+.languages h3::before {
+  background: url("../images/idiomas.svg") no-repeat center center;
+}

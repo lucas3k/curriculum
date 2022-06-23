@@ -6,6 +6,9 @@
   --color-subtitle-experience-text: #525252;
   --color-bg-experience: var(--color-bg-text-menu);
   --color-write: #fff;
+  --color-contra: #a3a3a3;
+  --color-dark: #000;
+  --color-text-courses: #8f8f8f;
 }
 
 html {
