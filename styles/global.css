@@ -12,8 +12,9 @@
   --color-light-footer: #ccc;
 }
 
-html {
-  scroll-behavior: smooth;
+html,
+body {
+  scroll-behavior: smooth !important;
 }
 
 body {
